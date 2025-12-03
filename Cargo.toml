@@ -21,7 +21,8 @@ sync = ["parking_lot", "std"]
 default = ["std"]
 
 [dependencies]
-parking_lot = { version = "0.12", optional = true }
+#parking_lot = { version = "0.12", optional = true }
+parking_lot = {workspace=true, optional=true}
 allocator-api2 = { version = "0.2.8", default-features = false }
 
 [dev-dependencies]
